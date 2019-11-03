@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Version>1.0</Version>
+    <Authors>David Verbrugge</Authors>
+    <Company>DVerTech</Company>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>MakeBuildDate</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>This program is built as a dotnet tool so it can be invoked to create a C# buildate constants class for use in any program
+To build and install:
+dotnet build -r win-x64 -c Release
+dotnet pack -c Release --nologo
+dotnet tool install --global --add-source ./nupkg MakeBuildDate
+
+Also see: https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create
+And https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-pack
+
+Use: 
+MakeBuildDate .\path\to\my\builddatefile.cs
+</Description>
+    <Copyright>Public Domain</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>CC0. Public Domain</PackageLicenseExpression>
+    <NeutralLanguage>en-001</NeutralLanguage>  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

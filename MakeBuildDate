@@ -1,0 +1,9 @@
+using System;
+namespace BuildInfo;
+{
+   public static partial class Constants
+   {
+       public static DateTime CompilationTimestampUtc { get { return new DateTime(637084123337107670, DateTimeKind.Utc); } }
+       public static DateTime CompilationTimestampLocal { get { return new DateTime(637083943337114475, DateTimeKind.Local); } }
+   }
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MakeBuildDate": {
+      "commandName": "Project",
+      "commandLineArgs": "test.cs"
+    }
+  }
+}
