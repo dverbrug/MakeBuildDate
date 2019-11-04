@@ -24,16 +24,26 @@ MakeBuildDate .\path\to\my\builddatefile.cs
 </Description>
     <Copyright>Public Domain</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>CC0. Public Domain</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <NeutralLanguage>en-001</NeutralLanguage>
     <RepositoryUrl>https://github.com/dverbrug/MakeBuildDate.git</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/dverbrug/MakeBuildDate/projects/1</PackageProjectUrl>  </PropertyGroup>
+    <PackageProjectUrl>https://github.com/dverbrug/MakeBuildDate/projects/1</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

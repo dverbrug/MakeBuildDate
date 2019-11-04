@@ -8,7 +8,7 @@ namespace MakeBuildDate
     {
         static private readonly string[] lines = {
             "0using System;",
-            "0namespace BuildInfo;",
+            "0namespace BuildInfo",
             "0{",
             "0   public static partial class Constants",
             "0   {",
